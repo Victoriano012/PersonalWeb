@@ -1,5 +1,4 @@
+.autojira/
 node_modules/
 .next/
-.vercel/
-.env*
-.autojira/
+.vercel
