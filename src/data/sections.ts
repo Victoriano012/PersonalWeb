@@ -1,5 +1,4 @@
 export const sections = [
-  { id: "about", label: "About" },
   { id: "education", label: "Education" },
   { id: "experience", label: "Experience" },
   { id: "research", label: "Research & Publications" },
