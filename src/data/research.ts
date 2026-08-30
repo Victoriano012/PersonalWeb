@@ -14,10 +14,11 @@ export const researchExperience: ResearchEntry[] = [
     organization: "MIT",
     period: "2019",
     description:
-      "I developed an exhaustive classification of the optimal ways to use X-Rays at CAT Scans, modeling the human body as R₃³.",
+      "I developed an exhaustive classification of the optimal ways to use X-Rays at CAT Scans, modeling the human body as ℝ₃³.",
   },
 ];
 
+// TODO: paper URLs are placeholders in the CV — fill in real links when available.
 export const publications: Publication[] = [
   {
     title:
