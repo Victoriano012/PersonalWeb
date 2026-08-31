@@ -47,7 +47,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: "Software Engineer Intern",
     organization: "Wiris",
-    logo: "/logos/wiris.svg",
+    logo: "/logos/wiris.png",
     period: "Jul 2021 - Sep 2021",
     description:
       "Implemented interactive chart visualization for educational purposes.",
