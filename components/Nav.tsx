@@ -17,7 +17,7 @@ export default function Nav() {
         >
           {profile.name}
         </Link>
-        <ul className="flex w-full flex-nowrap items-center justify-between gap-x-2 text-xs tracking-tight text-muted sm:w-auto sm:justify-end sm:gap-x-4 sm:text-sm sm:tracking-normal">
+        <ul className="flex w-full flex-nowrap items-center justify-between gap-x-1.5 text-xs tracking-tight text-muted min-[360px]:text-sm sm:w-auto sm:justify-end sm:gap-x-4 sm:tracking-normal">
           {sections.map((section) => {
             const isActive = pathname === section.href;
             return (
