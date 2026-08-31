@@ -26,8 +26,7 @@ export default function Hero() {
       <h1 className="font-serif text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
         {profile.name}
       </h1>
-      <p className="mt-4 max-w-2xl text-lg text-muted">{profile.tagline}</p>
-      <ul className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6">
+      <ul className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6">
         {profile.links.map((link) => (
           <li key={link.label}>
             <a

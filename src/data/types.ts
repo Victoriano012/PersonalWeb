@@ -51,6 +51,5 @@ export interface ContactLink {
 
 export interface Profile {
   name: string;
-  tagline: string;
   links: ContactLink[];
 }

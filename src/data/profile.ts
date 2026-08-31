@@ -2,8 +2,6 @@ import type { Profile } from "./types";
 
 export const profile: Profile = {
   name: "Victor Conchello Vendrell",
-  tagline:
-    "AI Researcher at Qualcomm · Mathematician & Data Scientist · Incoming Master's student at Harvard",
   links: [
     {
       label: "GitHub",
