@@ -59,5 +59,7 @@ export interface ContactLink {
 export interface Profile {
   name: string;
   tagline: string;
+  /** First-person self-description shown on the home page */
+  bio: string;
   links: ContactLink[];
 }

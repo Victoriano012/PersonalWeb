@@ -22,7 +22,7 @@ function isExternal(url: string) {
 
 export default function Hero() {
   return (
-    <div id="top" className="py-16">
+    <div id="top" className="pb-10 pt-14 sm:pt-20">
       <h1 className="font-serif text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
         {profile.name}
       </h1>

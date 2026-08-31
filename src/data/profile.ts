@@ -3,6 +3,8 @@ import type { Profile } from "./types";
 export const profile: Profile = {
   name: "Victor Conchello Vendrell",
   tagline: "Master's student at Harvard · AI Researcher · Mathematician & Data Scientist",
+  bio:
+    "AI is what interests me most right now. I've spent the last couple of years researching LLMs — reasoning models at Qualcomm, a thesis at Cambridge, four papers along the way — and I'm about to start a Master's in Data Science at Harvard to go deeper. Before that: maths and data science at UPC, and internships at Jane Street, Huawei and Wiris. In my free time I build small apps I actually use.",
   links: [
     {
       label: "GitHub",
