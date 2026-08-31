@@ -5,3 +5,4 @@ node_modules/
 
 # autojira ticket metadata
 .autojira/
+tsconfig.tsbuildinfo
