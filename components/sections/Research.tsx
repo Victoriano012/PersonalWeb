@@ -1,3 +1,4 @@
+import EntryHeader from "@/components/EntryHeader";
 import Section from "@/components/Section";
 import { publications, researchExperience } from "@/src/data/research";
 import type { Author } from "@/src/data/types";
@@ -40,16 +41,11 @@ export default function Research() {
       <ul className="space-y-6">
         {researchExperience.map((entry) => (
           <li key={entry.role}>
-            <div className="flex flex-col gap-x-4 sm:flex-row sm:items-baseline sm:justify-between">
-              <h3 className="font-medium text-foreground">
-                {entry.role}
-                <span className="font-normal text-muted">
-                  {" · "}
-                  {entry.organization}
-                </span>
-              </h3>
-              <p className="shrink-0 text-sm text-muted">{entry.period}</p>
-            </div>
+            <EntryHeader
+              role={entry.role}
+              place={entry.organization}
+              dates={entry.period}
+            />
             <p className="mt-1">{entry.description}</p>
           </li>
         ))}
