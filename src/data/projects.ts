@@ -37,10 +37,10 @@ export const projects: Project[] = [
     github: "https://github.com/Victoriano012/InvestApp",
   },
   {
-    name: "AutoJira",
+    name: "AutoProject",
     description:
-      "An autonomous ticket-driven development tool: projects are broken down into Jira-style tickets with dependencies and attachments, and AI coding agents pick them up and complete them end-to-end — implementing, committing, and reporting back — with each ticket's results feeding into the ones that depend on it.",
-    tags: ["AI Agents", "Automation", "Developer Tools"],
-    github: "https://github.com/Victoriano012/AutoJira",
+      "An autonomous project manager where a project is a graph of tickets — nodes with dependency edges, each able to hold its own subgraph — and AI coding agents do the work underneath. Any ticket (or the whole graph, in dependency order) can be handed to Claude Code or Codex, which implements it end-to-end in the workspace folder; tickets marked for human review pause for feedback before continuing. Projects are plain folders with autosaved state and inherited context files, so there is no database or login.",
+    tags: ["AI Agents", "Automation", "Developer Tools", "Next.js", "React Flow"],
+    github: "https://github.com/Victoriano012/AutoProject",
   },
 ];
