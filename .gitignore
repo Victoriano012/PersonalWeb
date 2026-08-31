@@ -1,8 +1,9 @@
-.autojira/
 node_modules/
 .next/
 .vercel
+.env*
+.DS_Store
+tsconfig.tsbuildinfo
 
 # autojira ticket metadata
 .autojira/
-tsconfig.tsbuildinfo
