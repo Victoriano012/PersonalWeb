@@ -23,7 +23,7 @@ export interface ResearchEntry {
 
 export interface Author {
   name: string;
-  /** Victor's name, to be rendered in bold */
+  /** Victor's name, to be rendered in italics */
   highlight?: boolean;
   /** Equal contribution (asterisk in the CV) */
   equalContribution?: boolean;

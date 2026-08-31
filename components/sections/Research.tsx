@@ -10,9 +10,7 @@ function AuthorList({ authors }: { authors: Author[] }) {
         <span key={author.name}>
           {i > 0 && ", "}
           {author.highlight ? (
-            <strong className="font-semibold text-foreground">
-              {author.name}
-            </strong>
+            <span className="italic">{author.name}</span>
           ) : (
             author.name
           )}
