@@ -10,7 +10,7 @@ export default function Home() {
         {profile.bio.map((paragraph) => (
           <p
             key={paragraph}
-            className="font-serif text-[1.0625rem] leading-[1.7] text-foreground sm:text-[1.125rem]"
+            className="font-serif text-[1rem] leading-[1.7] text-foreground sm:text-[1.0625rem]"
           >
             {paragraph}
           </p>
