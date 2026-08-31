@@ -19,8 +19,7 @@ export const awards: Award[] = [
     title: "Winner",
     org: "HackUPC",
     year: "2024",
-    description:
-      "Barcelona's largest student hackathon, held at UPC.",
+    description: "Barcelona's largest student hackathon, held at UPC.",
   },
   {
     title: "First Prize",
@@ -38,7 +37,7 @@ export const awards: Award[] = [
     org: "SWERC ICPC",
     year: "2022-2024",
     description:
-      "Regional round of ICPC, the competitive programming contest for university teams across Europe.",
+      "Regional round of ICPC, the worldwide competitive programming contest for university teams.",
     items: [
       { label: "Silver Medal", year: "2024" },
       { label: "Bronze Medal", year: "2023" },
@@ -49,8 +48,7 @@ export const awards: Award[] = [
     title: "Gold and Silver Medals",
     org: "Spanish National Olympiads",
     year: "2020",
-    description:
-      "National rounds of the secondary-school science olympiads.",
+    description: "National rounds of the secondary-school science olympiads.",
     items: [
       { label: "Gold Medal", year: "2020", detail: "Informatics" },
       { label: "Gold Medal", year: "2020", detail: "Physics" },
@@ -58,10 +56,27 @@ export const awards: Award[] = [
     ],
   },
   {
-    title: "Top Student of the Cohort",
-    org: "Catalan Math Kangaroo",
+    // Placements verified against the official SCM/Cangur prize lists:
+    //   2020 Silver Pin: https://cangur.org/cangur/cang2020/
+    //   2018, 1st of 4t ESO with 141.25 pts: https://cangur.org/cangur/cang2018/informacions/premis/index.php
+    //   2017, "8, ex aequo" of 3r ESO: https://cangur.org/cangur/cang2017/premis/index.php
+    title: "First Place in Catalonia",
+    org: "Catalan Math Kangaroo (Cangur, SCM)",
     year: "2016-2020",
     description:
       "Catalan edition of the international Kangaroo mathematics contest.",
+    items: [
+      { label: "Silver Pin", year: "2020", detail: "top four of the cohort" },
+      {
+        label: "1st place in Catalonia",
+        year: "2018",
+        detail: "4th ESO (grade 10)",
+      },
+      {
+        label: "8th place in Catalonia",
+        year: "2017",
+        detail: "3rd ESO (grade 9)",
+      },
+    ],
   },
 ];
