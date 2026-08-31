@@ -32,8 +32,8 @@ export interface Author {
 export interface Publication {
   title: string;
   authors: Author[];
-  /** Primary venue name, e.g. "NeurIPS" */
-  venue: string;
+  /** Primary venue name, e.g. "NeurIPS"; omitted when not accepted anywhere */
+  venue?: string;
   /** Year of the primary venue, when known */
   year?: number;
   /** Publication status at the primary venue */

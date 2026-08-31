@@ -67,25 +67,29 @@ export default function Research() {
                     <span aria-hidden="true">↗</span>
                   </a>
                 )}
-                <ul className="mt-2 flex flex-wrap items-center gap-2">
-                  <VenueBadge>
-                    {paper.status && (
-                      <>
-                        {paper.status}
-                        <span aria-hidden="true"> · </span>
-                      </>
+                {(paper.venue || paper.workshop) && (
+                  <ul className="mt-2 flex flex-wrap items-center gap-2">
+                    {paper.venue && (
+                      <VenueBadge>
+                        {paper.status && (
+                          <>
+                            {paper.status}
+                            <span aria-hidden="true"> · </span>
+                          </>
+                        )}
+                        {paper.venue}
+                        {paper.year ? ` ${paper.year}` : ""}
+                      </VenueBadge>
                     )}
-                    {paper.venue}
-                    {paper.year ? ` ${paper.year}` : ""}
-                  </VenueBadge>
-                  {paper.workshop && (
-                    <VenueBadge>
-                      Presented
-                      <span aria-hidden="true"> · </span>
-                      {paper.workshop}
-                    </VenueBadge>
-                  )}
-                </ul>
+                    {paper.workshop && (
+                      <VenueBadge>
+                        Presented
+                        <span aria-hidden="true"> · </span>
+                        {paper.workshop}
+                      </VenueBadge>
+                    )}
+                  </ul>
+                )}
               </li>
             ))}
           </ul>

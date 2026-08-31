@@ -7,7 +7,7 @@ export const researchExperience: ResearchEntry[] = [
     organization: "Van der Schaar Lab, Cambridge",
     period: "Jan 2025 - Jun 2025",
     description:
-      "Conducted Bachelor's thesis research, supervised by Prof. Mihaela van der Schaar, on training LLMs for long-term strategic conversation, leading to a paper at AIStats.",
+      "Conducted Bachelor's thesis research, supervised by Prof. Mihaela van der Schaar, on training LLMs for long-term strategic conversation, leading to the GameTalk paper.",
   },
   {
     role: "Research Science Institute (RSI '19)",
@@ -63,7 +63,6 @@ export const publications: Publication[] = [
       { name: "Max Ruiz Luyten" },
       { name: "Mihaela van der Schaar" },
     ],
-    venue: "AIStats",
     link: "https://arxiv.org/pdf/2601.16276",
   },
   {
@@ -81,8 +80,6 @@ export const publications: Publication[] = [
       { name: "Arnau Padrés Masdemont" },
       { name: "Jordi Ros-Giralt" },
     ],
-    venue: "NeurIPS",
-    year: 2026,
     workshop: "ICLR 2026 LLM Reasoning",
     link: "https://arxiv.org/pdf/2601.16218",
   },
