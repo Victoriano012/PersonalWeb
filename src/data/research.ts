@@ -63,6 +63,7 @@ export const publications: Publication[] = [
       { name: "Max Ruiz Luyten" },
       { name: "Mihaela van der Schaar" },
     ],
+    venue: "arXiv",
     link: "https://arxiv.org/pdf/2601.16276",
   },
   {
