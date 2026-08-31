@@ -12,18 +12,17 @@ export const experience: ExperienceEntry[] = [
   },
   {
     role: "Co-organizer and Teacher",
-    organization: "Mathematics outreach course for secondary school students",
     period: "2024",
     description:
-      "Co-organizer and Teacher of a mathematics outreach course for secondary school students.",
+      "Co-organized and taught a mathematics outreach course for secondary school students.",
     kind: "academic-service",
   },
   {
     role: "First-Year Student Mentor",
-    organization: "B.S. in Mathematics and B.S. Data Science at UPC",
+    organization: "UPC",
     period: "2023 - 2024",
     description:
-      "First-Year Student Mentor for the B.S. in Mathematics and B.S. Data Science at UPC.",
+      "Mentored first-year students taking the B.S. in Mathematics and the B.S. in Data Science simultaneously.",
     kind: "academic-service",
   },
   {

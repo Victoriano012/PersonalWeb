@@ -2,7 +2,8 @@ import type { ReactNode } from "react";
 
 interface EntryHeaderProps {
   role: string;
-  place: string;
+  /** Institution or company; omitted when the role has no formal employer */
+  place?: string;
   dates: string;
   /** Optional pill rendered after the role, e.g. "Academic service" */
   badge?: ReactNode;
@@ -22,8 +23,12 @@ export default function EntryHeader({
     <div className="flex flex-col gap-x-4 sm:flex-row sm:items-baseline sm:justify-between">
       <h3 className="font-medium text-foreground">
         {role}
-        <span className="text-muted">{" · "}</span>
-        <span className="font-medium text-accent">{place}</span>
+        {place && (
+          <>
+            <span className="text-muted">{" · "}</span>
+            <span className="font-medium text-accent">{place}</span>
+          </>
+        )}
         {badge}
       </h3>
       <p className="shrink-0 text-sm text-muted">{dates}</p>

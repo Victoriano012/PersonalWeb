@@ -7,7 +7,8 @@ export interface EducationEntry {
 
 export interface ExperienceEntry {
   role: string;
-  organization: string;
+  /** Company or institution; omitted when the role has no formal employer */
+  organization?: string;
   period: string;
   description: string;
   kind: "work" | "academic-service";

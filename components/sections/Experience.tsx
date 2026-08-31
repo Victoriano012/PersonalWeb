@@ -20,9 +20,7 @@ export default function Experience() {
                 )
               }
             />
-            {entry.kind === "work" && (
-              <p className="mt-1">{entry.description}</p>
-            )}
+            <p className="mt-1">{entry.description}</p>
           </li>
         ))}
       </ol>
