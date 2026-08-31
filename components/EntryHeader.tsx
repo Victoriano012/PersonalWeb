@@ -2,12 +2,13 @@ interface EntryHeaderProps {
   role: string;
   /** Institution or company; omitted when the role has no formal employer */
   place?: string;
-  dates: string;
+  /** Date or period; omitted when the entry has none */
+  dates?: string;
 }
 
 /**
- * Shared header for Experience and Research entries: role with the
- * institution/company inline to its right, dates right-aligned.
+ * Shared header for Experience, Research and Awards entries: title with the
+ * institution/organization inline to its right, dates right-aligned.
  */
 export default function EntryHeader({ role, place, dates }: EntryHeaderProps) {
   return (
@@ -21,7 +22,7 @@ export default function EntryHeader({ role, place, dates }: EntryHeaderProps) {
           </>
         )}
       </h3>
-      <p className="shrink-0 text-sm text-muted">{dates}</p>
+      {dates && <p className="shrink-0 text-sm text-muted">{dates}</p>}
     </div>
   );
 }
