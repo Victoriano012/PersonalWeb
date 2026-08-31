@@ -38,7 +38,7 @@ export const awards: Award[] = [
     org: "SWERC ICPC",
     year: "2022-2024",
     description:
-      "Southwestern Europe Regional Contest of the ICPC, where university teams compete in algorithmic programming for a place at the World Finals.",
+      "Southwestern Europe Regional Contest of the ICPC, where university teams compete in competitive programming.",
     items: [
       { label: "Silver Medal", year: "2024" },
       { label: "Bronze Medal", year: "2023" },
