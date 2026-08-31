@@ -64,7 +64,7 @@ export const awards: Award[] = [
     org: "Catalan Math Kangaroo (Cangur, SCM)",
     year: "2016-2020",
     description:
-      "Catalan edition of the international Kangaroo mathematics contest.",
+      "Catalan edition of the international Kangaroo mathematics contest for secondary school students.",
     items: [
       { label: "Silver Pin", year: "2020", detail: "top four of the cohort" },
       {
