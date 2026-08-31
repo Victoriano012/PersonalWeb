@@ -62,40 +62,36 @@ export default function Research() {
               <p className="mt-1 text-sm leading-relaxed text-muted">
                 <AuthorList authors={paper.authors} />
               </p>
-              <div className="mt-2 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
-                {paper.link ? (
-                  <a
-                    href={paper.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex w-fit items-center gap-1 rounded-sm text-sm text-accent transition-colors hover:text-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-                  >
-                    Paper
-                    <span aria-hidden="true">↗</span>
-                  </a>
-                ) : (
-                  <span />
-                )}
-                <ul className="flex flex-wrap items-center gap-2 sm:justify-end">
-                  <VenueBadge>
-                    {paper.status && (
-                      <>
-                        {paper.status}
-                        <span aria-hidden="true"> · </span>
-                      </>
-                    )}
-                    {paper.venue}
-                    {paper.year ? ` ${paper.year}` : ""}
-                  </VenueBadge>
-                  {paper.workshop && (
-                    <VenueBadge>
-                      Presented
+              {paper.link && (
+                <a
+                  href={paper.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 flex w-fit items-center gap-1 rounded-sm text-sm text-accent transition-colors hover:text-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                >
+                  Paper
+                  <span aria-hidden="true">↗</span>
+                </a>
+              )}
+              <ul className="mt-2 flex flex-wrap items-center gap-2">
+                <VenueBadge>
+                  {paper.status && (
+                    <>
+                      {paper.status}
                       <span aria-hidden="true"> · </span>
-                      {paper.workshop}
-                    </VenueBadge>
+                    </>
                   )}
-                </ul>
-              </div>
+                  {paper.venue}
+                  {paper.year ? ` ${paper.year}` : ""}
+                </VenueBadge>
+                {paper.workshop && (
+                  <VenueBadge>
+                    Presented
+                    <span aria-hidden="true"> · </span>
+                    {paper.workshop}
+                  </VenueBadge>
+                )}
+              </ul>
             </li>
           ))}
         </ul>
