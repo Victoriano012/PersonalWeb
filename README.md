@@ -20,3 +20,7 @@ Hosted on Vercel. Pushes to `main` deploy automatically to production; other bra
 - `app/` — App Router pages (one route per topic), root layout, global styles
 - `components/` — shared layout/UI (nav, hero, page shell) and one component per content section
 - `src/data/` — typed content data (education, experience, research, projects, awards)
+
+## Deployment
+
+Deployed on Vercel. Pushes to `main` deploy to production; other branches and PRs get preview deployments.
