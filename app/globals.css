@@ -39,8 +39,3 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
-
-/* Keep anchored sections clear of the sticky header */
-section[id] {
-  scroll-margin-top: 5rem;
-}
