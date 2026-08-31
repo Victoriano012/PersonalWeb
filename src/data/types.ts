@@ -64,7 +64,7 @@ export interface Award {
 export interface ContactLink {
   label: string;
   url: string;
-  icon: "github" | "linkedin" | "email" | "phone";
+  icon: "github" | "linkedin" | "email";
 }
 
 export interface Profile {

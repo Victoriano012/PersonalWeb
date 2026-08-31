@@ -24,10 +24,5 @@ export const profile: Profile = {
       url: "mailto:victorconchello@gmail.com",
       icon: "email",
     },
-    {
-      label: "Phone",
-      url: "tel:+34606856664",
-      icon: "phone",
-    },
   ],
 };
