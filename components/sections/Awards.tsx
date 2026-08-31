@@ -10,6 +10,7 @@ export default function Awards() {
             role={award.title}
             place={award.org}
             dates={award.year}
+            inlineDates
           />
           {award.description && (
             <p className="mt-1 max-w-prose text-sm leading-relaxed">
