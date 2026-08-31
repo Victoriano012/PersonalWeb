@@ -17,6 +17,7 @@ function EntryList({ entries }: { entries: ExperienceEntry[] }) {
             role={entry.role}
             place={entry.organization}
             dates={entry.period}
+            logo={entry.logo}
           />
           <p className="mt-1">{entry.description}</p>
         </li>

@@ -12,6 +12,8 @@ export interface ExperienceEntry {
   period: string;
   description: string;
   kind: "work" | "academic-service";
+  /** Path under /logos to a small square company mark; work entries only */
+  logo?: string;
 }
 
 export interface ResearchEntry {

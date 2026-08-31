@@ -5,6 +5,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: "AI Researcher",
     organization: "Qualcomm",
+    logo: "/logos/qualcomm.svg",
     period: "Jul 2025 - Aug 2026",
     description:
       "Investigating and improving the capabilities of frontier reasoning models.",
@@ -28,6 +29,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: "Quantitative Research Intern",
     organization: "Jane Street",
+    logo: "/logos/jane-street.svg",
     period: "Jul 2023 - Sep 2023",
     description:
       "Predictive modeling of markets and trading algorithm development.",
@@ -36,6 +38,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: "AI Research Intern",
     organization: "Huawei",
+    logo: "/logos/huawei.svg",
     period: "Jul 2022 - Sep 2022",
     description:
       "Developed a state-of-the-art model for automatic model selection for outlier detection on time series.",
@@ -44,6 +47,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: "Software Engineer Intern",
     organization: "Wiris",
+    logo: "/logos/wiris.svg",
     period: "Jul 2021 - Sep 2021",
     description:
       "Implemented interactive chart visualization for educational purposes.",
