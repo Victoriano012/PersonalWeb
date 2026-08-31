@@ -31,73 +31,84 @@ function VenueBadge({ children }: { children: React.ReactNode }) {
   );
 }
 
+function SubgroupHeading({ children }: { children: React.ReactNode }) {
+  return (
+    <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground">
+      {children}
+    </h3>
+  );
+}
+
 export default function Research() {
   const hasEqualContribution = publications.some((p) =>
     p.authors.some((a) => a.equalContribution)
   );
 
   return (
-    <Section id="research" title="Research & Publications">
-      <ul className="space-y-6">
-        {researchExperience.map((entry) => (
-          <li key={entry.role}>
-            <EntryHeader
-              role={entry.role}
-              place={entry.organization}
-              dates={entry.period}
-            />
-            <p className="mt-1">{entry.description}</p>
-          </li>
-        ))}
-      </ul>
-
-      <div>
-        <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground">
-          Papers
-        </h3>
-        <ul className="mt-4 space-y-6">
-          {publications.map((paper) => (
-            <li key={paper.title}>
-              <h4 className="font-medium text-foreground">{paper.title}</h4>
-              <p className="mt-1 text-sm leading-relaxed text-muted">
-                <AuthorList authors={paper.authors} />
-              </p>
-              {paper.link && (
-                <a
-                  href={paper.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 flex w-fit items-center gap-1 rounded-sm text-sm text-accent transition-colors hover:text-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-                >
-                  Paper
-                  <span aria-hidden="true">↗</span>
-                </a>
-              )}
-              <ul className="mt-2 flex flex-wrap items-center gap-2">
-                <VenueBadge>
-                  {paper.status && (
-                    <>
-                      {paper.status}
-                      <span aria-hidden="true"> · </span>
-                    </>
-                  )}
-                  {paper.venue}
-                  {paper.year ? ` ${paper.year}` : ""}
-                </VenueBadge>
-                {paper.workshop && (
-                  <VenueBadge>
-                    Presented
-                    <span aria-hidden="true"> · </span>
-                    {paper.workshop}
-                  </VenueBadge>
+    <Section id="research" title="Research">
+      <div className="space-y-10">
+        <div>
+          <SubgroupHeading>Papers</SubgroupHeading>
+          <ul className="mt-4 space-y-6">
+            {publications.map((paper) => (
+              <li key={paper.title}>
+                <h4 className="font-medium text-foreground">{paper.title}</h4>
+                <p className="mt-1 text-sm leading-relaxed text-muted">
+                  <AuthorList authors={paper.authors} />
+                </p>
+                {paper.link && (
+                  <a
+                    href={paper.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 flex w-fit items-center gap-1 rounded-sm text-sm text-accent transition-colors hover:text-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                  >
+                    Paper
+                    <span aria-hidden="true">↗</span>
+                  </a>
                 )}
-              </ul>
-            </li>
-          ))}
-        </ul>
-        {hasEqualContribution && (
-          <p className="mt-4 text-sm">* Equal contribution.</p>
-        )}
+                <ul className="mt-2 flex flex-wrap items-center gap-2">
+                  <VenueBadge>
+                    {paper.status && (
+                      <>
+                        {paper.status}
+                        <span aria-hidden="true"> · </span>
+                      </>
+                    )}
+                    {paper.venue}
+                    {paper.year ? ` ${paper.year}` : ""}
+                  </VenueBadge>
+                  {paper.workshop && (
+                    <VenueBadge>
+                      Presented
+                      <span aria-hidden="true"> · </span>
+                      {paper.workshop}
+                    </VenueBadge>
+                  )}
+                </ul>
+              </li>
+            ))}
+          </ul>
+          {hasEqualContribution && (
+            <p className="mt-4 text-sm">* Equal contribution.</p>
+          )}
+        </div>
+
+        <div>
+          <SubgroupHeading>Academic Visits</SubgroupHeading>
+          <ul className="mt-4 space-y-6">
+            {researchExperience.map((entry) => (
+              <li key={entry.role}>
+                <EntryHeader
+                  role={entry.role}
+                  place={entry.organization}
+                  dates={entry.period}
+                />
+                <p className="mt-1">{entry.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </Section>
   );
