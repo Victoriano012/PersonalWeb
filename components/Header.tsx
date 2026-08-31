@@ -17,7 +17,7 @@ export default function Header() {
             <li key={section.id}>
               <a
                 href={`#${section.id}`}
-                className="transition-colors hover:text-accent"
+                className="transition-colors hover:text-link"
               >
                 {section.label}
               </a>

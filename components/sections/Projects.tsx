@@ -51,7 +51,7 @@ export default function Projects() {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-flex w-fit items-center gap-1.5 text-sm text-accent transition-colors hover:text-accent-hover"
+                className="mt-4 inline-flex w-fit items-center gap-1.5 text-sm text-link transition-colors hover:text-link-hover"
               >
                 <GitHubIcon />
                 View source

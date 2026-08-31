@@ -12,7 +12,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/"
-        className="mt-2 text-sm font-medium text-accent transition-colors hover:text-accent-hover"
+        className="mt-2 text-sm font-medium text-link transition-colors hover:text-link-hover"
       >
         ← Back to home
       </Link>

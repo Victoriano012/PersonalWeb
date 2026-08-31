@@ -27,7 +27,7 @@ export default function OpenGraphImage() {
           {profile.tagline}
         </div>
         <div
-          style={{ marginTop: 48, height: 8, width: 180, background: "#1e40af" }}
+          style={{ marginTop: 48, height: 8, width: 180, background: "#e2700f" }}
         />
       </div>
     ),

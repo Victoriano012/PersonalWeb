@@ -35,7 +35,7 @@ export default function Hero() {
               {...(isExternal(link.url)
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
-              className="inline-flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-accent"
+              className="inline-flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-link"
             >
               <svg
                 viewBox="0 0 16 16"

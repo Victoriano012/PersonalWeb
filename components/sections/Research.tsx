@@ -78,7 +78,7 @@ export default function Research() {
                       href={paper.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="ml-auto flex w-fit items-center gap-1 rounded-sm text-sm text-accent transition-colors hover:text-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                      className="ml-auto flex w-fit items-center gap-1 rounded-sm text-sm text-link transition-colors hover:text-link-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-link/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                     >
                       Paper
                       <span aria-hidden="true">↗</span>

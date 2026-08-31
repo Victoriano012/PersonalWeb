@@ -35,7 +35,7 @@ export default function Footer() {
                 href={link.url}
                 target={link.url.startsWith("http") ? "_blank" : undefined}
                 rel={link.url.startsWith("http") ? "noreferrer" : undefined}
-                className="inline-flex items-center gap-1.5 transition-colors hover:text-accent"
+                className="inline-flex items-center gap-1.5 transition-colors hover:text-link"
               >
                 {icons[link.icon]}
                 {link.label}

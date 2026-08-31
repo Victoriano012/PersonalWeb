@@ -5,15 +5,15 @@
   --surface: #f6f5f2;
   --foreground: #1c1c1a;
   --muted: #57534e;
-  --accent: #1e40af;
-  --accent-hover: #1e3a8a;
-  --accent-orange: #c2410c;
+  --link: #1e40af;
+  --link-hover: #1e3a8a;
+  --accent: #e2700f;
   --border: #e7e5e4;
 }
 
 /* Dark values, dormant until a dark theme is introduced (no .dark is set today) */
 .dark {
-  --accent-orange: #fb923c;
+  --accent: #fb923c;
 }
 
 @theme inline {
@@ -21,9 +21,9 @@
   --color-surface: var(--surface);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
+  --color-link: var(--link);
+  --color-link-hover: var(--link-hover);
   --color-accent: var(--accent);
-  --color-accent-hover: var(--accent-hover);
-  --color-accent-orange: var(--accent-orange);
   --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-serif: var(--font-source-serif);
