@@ -16,8 +16,8 @@ export default function EntryHeader({ role, place, dates }: EntryHeaderProps) {
         {role}
         {place && (
           <>
-            <span className="text-muted">{" · "}</span>
-            <span className="font-medium text-accent">{place}</span>
+            <span className="font-normal text-muted">{" · "}</span>
+            <span className="font-normal text-accent">{place}</span>
           </>
         )}
       </h3>
