@@ -7,7 +7,7 @@ export const researchExperience: ResearchEntry[] = [
     organization: "Van der Schaar Lab, Cambridge",
     period: "Jan 2025 - Jun 2025",
     description:
-      "Conducted Bachelor's thesis research, supervised by Prof. Mihaela van der Schaar, on training LLMs for long-term strategic conversation, leading to a paper under review at AIStats.",
+      "Conducted Bachelor's thesis research, supervised by Prof. Mihaela van der Schaar, on training LLMs for long-term strategic conversation, leading to a paper at AIStats.",
   },
   {
     role: "Research Science Institute (RSI '19)",
@@ -64,7 +64,6 @@ export const publications: Publication[] = [
       { name: "Mihaela van der Schaar" },
     ],
     venue: "AIStats",
-    status: "Under review",
     link: "https://arxiv.org/pdf/2601.16276",
   },
   {
@@ -84,7 +83,6 @@ export const publications: Publication[] = [
     ],
     venue: "NeurIPS",
     year: 2026,
-    status: "Under review",
     workshop: "ICLR 2026 LLM Reasoning",
     link: "https://arxiv.org/pdf/2601.16218",
   },
