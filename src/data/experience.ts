@@ -5,7 +5,7 @@ export const experience: ExperienceEntry[] = [
   {
     role: "AI Researcher",
     organization: "Qualcomm",
-    period: "Jul 2025 - present",
+    period: "Jul 2025 - Aug 2026",
     description:
       "Investigating and improving the capabilities of frontier reasoning models.",
     kind: "work",
