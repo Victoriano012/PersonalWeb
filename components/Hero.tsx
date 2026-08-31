@@ -27,25 +27,27 @@ export default function Hero() {
         {profile.name}
       </h1>
       <p className="mt-4 max-w-2xl text-lg text-muted">{profile.tagline}</p>
-      <ul className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-6">
+      <ul className="mt-8 flex flex-nowrap items-center justify-center gap-2 sm:flex-wrap sm:justify-start sm:gap-x-6 sm:gap-y-3">
         {profile.links.map((link) => (
           <li key={link.label}>
             <a
               href={link.url}
+              aria-label={link.label}
+              title={link.label}
               {...(isExternal(link.url)
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
-              className="inline-flex items-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-link"
+              className="inline-flex min-h-10 min-w-10 items-center justify-center gap-2 text-sm font-medium text-foreground transition-colors hover:text-link sm:min-h-0 sm:min-w-0 sm:justify-start"
             >
               <svg
                 viewBox="0 0 16 16"
                 fill="currentColor"
                 aria-hidden="true"
-                className="h-4 w-4 text-muted"
+                className="h-5 w-5 text-muted sm:h-4 sm:w-4"
               >
                 {icons[link.icon]}
               </svg>
-              {link.label}
+              <span className="hidden sm:inline">{link.label}</span>
             </a>
           </li>
         ))}
