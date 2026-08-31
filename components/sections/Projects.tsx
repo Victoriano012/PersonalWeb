@@ -17,7 +17,7 @@ function GitHubIcon() {
 export default function Projects() {
   return (
     <Section id="projects" title="Personal Projects">
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-5 sm:grid-cols-2">
         {projects.map((project) => (
           <article
             key={project.name}
@@ -27,19 +27,8 @@ export default function Projects() {
               <h3 className="font-serif text-lg font-semibold text-foreground">
                 {project.name}
               </h3>
-              {project.github ? (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-0.5 shrink-0 text-muted transition-colors hover:text-accent"
-                  aria-label={`${project.name} on GitHub`}
-                  title={`${project.name} on GitHub`}
-                >
-                  <GitHubIcon />
-                </a>
-              ) : (
-                <span className="mt-0.5 shrink-0 rounded-full border border-border px-2 py-0.5 text-xs text-muted">
+              {!project.github && (
+                <span className="mt-1 shrink-0 rounded-full border border-border px-2 py-0.5 text-xs text-muted">
                   Private
                 </span>
               )}
@@ -47,6 +36,18 @@ export default function Projects() {
             <p className="mt-3 flex-1 text-sm leading-relaxed">
               {project.description}
             </p>
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex w-fit items-center gap-1.5 text-sm text-accent transition-colors hover:text-accent-hover"
+              >
+                <GitHubIcon />
+                View source
+                <span aria-hidden="true">→</span>
+              </a>
+            )}
             <ul className="mt-4 flex flex-wrap gap-1.5">
               {project.tags.map((tag) => (
                 <li
