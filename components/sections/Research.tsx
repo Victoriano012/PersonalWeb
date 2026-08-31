@@ -56,40 +56,42 @@ export default function Research() {
                 <p className="mt-1 text-sm leading-relaxed text-muted">
                   <AuthorList authors={paper.authors} />
                 </p>
-                {paper.link && (
-                  <a
-                    href={paper.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2 flex w-fit items-center gap-1 rounded-sm text-sm text-accent transition-colors hover:text-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-                  >
-                    Paper
-                    <span aria-hidden="true">↗</span>
-                  </a>
-                )}
-                {(paper.venue || paper.workshop) && (
-                  <ul className="mt-2 flex flex-wrap items-center gap-2">
-                    {paper.venue && (
-                      <VenueBadge>
-                        {paper.status && (
-                          <>
-                            {paper.status}
-                            <span aria-hidden="true"> · </span>
-                          </>
-                        )}
-                        {paper.venue}
-                        {paper.year ? ` ${paper.year}` : ""}
-                      </VenueBadge>
-                    )}
-                    {paper.workshop && (
-                      <VenueBadge>
-                        Presented
-                        <span aria-hidden="true"> · </span>
-                        {paper.workshop}
-                      </VenueBadge>
-                    )}
-                  </ul>
-                )}
+                <div className="mt-2 flex flex-wrap items-baseline justify-between gap-3">
+                  {(paper.venue || paper.workshop) && (
+                    <ul className="flex flex-wrap items-center gap-2">
+                      {paper.venue && (
+                        <VenueBadge>
+                          {paper.status && (
+                            <>
+                              {paper.status}
+                              <span aria-hidden="true"> · </span>
+                            </>
+                          )}
+                          {paper.venue}
+                          {paper.year ? ` ${paper.year}` : ""}
+                        </VenueBadge>
+                      )}
+                      {paper.workshop && (
+                        <VenueBadge>
+                          Presented
+                          <span aria-hidden="true"> · </span>
+                          {paper.workshop}
+                        </VenueBadge>
+                      )}
+                    </ul>
+                  )}
+                  {paper.link && (
+                    <a
+                      href={paper.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-auto flex w-fit items-center gap-1 rounded-sm text-sm text-accent transition-colors hover:text-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                    >
+                      Paper
+                      <span aria-hidden="true">↗</span>
+                    </a>
+                  )}
+                </div>
               </li>
             ))}
           </ul>
