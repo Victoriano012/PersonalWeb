@@ -60,13 +60,12 @@ export const awards: Award[] = [
     //   2020 Silver Pin: https://cangur.org/cangur/cang2020/
     //   2018, 1st of 4t ESO with 141.25 pts: https://cangur.org/cangur/cang2018/informacions/premis/index.php
     //   2017, "8, ex aequo" of 3r ESO: https://cangur.org/cangur/cang2017/premis/index.php
-    title: "First Place in Catalonia",
-    org: "Catalan Math Kangaroo (Cangur, SCM)",
+    title: "Silver Pin",
+    org: "Catalan Math Kangaroo",
     year: "2016-2020",
     description:
-      "Catalan edition of the international Kangaroo mathematics contest for secondary school students.",
+      "Best performer overall of the Catalan edition of the Kangaroo mathematics contest.",
     items: [
-      { label: "Silver Pin", year: "2020", detail: "top four of the cohort" },
       {
         label: "1st place in Catalonia",
         year: "2018",
