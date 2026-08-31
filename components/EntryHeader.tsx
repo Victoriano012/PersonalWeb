@@ -32,9 +32,7 @@ export default function EntryHeader({
         <img
           src={logo}
           alt=""
-          width={24}
-          height={24}
-          className="mr-2 inline-block h-[1em] w-[1em] shrink-0 object-contain align-[-0.14em]"
+          className="mr-2 inline-block h-[1em] w-auto shrink-0 object-contain align-[-0.14em]"
         />
       )}
       {role}
