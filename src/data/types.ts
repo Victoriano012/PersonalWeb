@@ -43,11 +43,22 @@ export interface Publication {
   link?: string;
 }
 
+export interface AwardItem {
+  /** The individual result, e.g. "Gold Medal" */
+  label: string;
+  year?: string;
+  /** Extra qualifier for the result, e.g. the subject or level */
+  detail?: string;
+}
+
 export interface Award {
   title: string;
-  organization: string;
-  period: string;
+  org?: string;
+  year?: string;
+  /** One sentence explaining what the award is */
   description?: string;
+  /** Individual results, when the award covers several distinct ones */
+  items?: AwardItem[];
 }
 
 export interface ContactLink {
