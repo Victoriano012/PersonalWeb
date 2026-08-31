@@ -1,5 +1,6 @@
 import EntryHeader from "@/components/EntryHeader";
 import Section from "@/components/Section";
+import SubgroupHeading from "@/components/SubgroupHeading";
 import { publications, researchExperience } from "@/src/data/research";
 import type { Author } from "@/src/data/types";
 
@@ -31,17 +32,9 @@ function VenueBadge({ children }: { children: React.ReactNode }) {
   );
 }
 
-function SubgroupHeading({ children }: { children: React.ReactNode }) {
-  return (
-    <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground">
-      {children}
-    </h3>
-  );
-}
-
 export default function Research() {
   const hasEqualContribution = publications.some((p) =>
-    p.authors.some((a) => a.equalContribution)
+    p.authors.some((a) => a.equalContribution),
   );
 
   return (

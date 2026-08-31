@@ -1,29 +1,43 @@
 import EntryHeader from "@/components/EntryHeader";
 import Section from "@/components/Section";
+import SubgroupHeading from "@/components/SubgroupHeading";
 import { experience } from "@/src/data/experience";
+import type { ExperienceEntry } from "@/src/data/types";
+
+const work = experience.filter((entry) => entry.kind === "work");
+const academicService = experience.filter(
+  (entry) => entry.kind === "academic-service",
+);
+
+function EntryList({ entries }: { entries: ExperienceEntry[] }) {
+  return (
+    <ol className="space-y-6">
+      {entries.map((entry) => (
+        <li key={`${entry.role}-${entry.organization ?? ""}`}>
+          <EntryHeader
+            role={entry.role}
+            place={entry.organization}
+            dates={entry.period}
+          />
+          <p className="mt-1">{entry.description}</p>
+        </li>
+      ))}
+    </ol>
+  );
+}
 
 export default function Experience() {
   return (
     <Section id="experience" title="Experience">
-      <ol className="space-y-6">
-        {experience.map((entry) => (
-          <li key={`${entry.role}-${entry.organization}`}>
-            <EntryHeader
-              role={entry.role}
-              place={entry.organization}
-              dates={entry.period}
-              badge={
-                entry.kind === "academic-service" && (
-                  <span className="ml-2 inline-block translate-y-[-0.1em] rounded-full border border-border bg-surface px-2.5 py-0.5 align-middle text-xs font-medium tracking-wide text-muted">
-                    Academic service
-                  </span>
-                )
-              }
-            />
-            <p className="mt-1">{entry.description}</p>
-          </li>
-        ))}
-      </ol>
+      <div className="space-y-10">
+        <EntryList entries={work} />
+        <div>
+          <SubgroupHeading>Academic Service</SubgroupHeading>
+          <div className="mt-4">
+            <EntryList entries={academicService} />
+          </div>
+        </div>
+      </div>
     </Section>
   );
 }
