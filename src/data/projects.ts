@@ -2,7 +2,8 @@ export interface Project {
   name: string;
   description: string;
   tags: string[];
-  github: string;
+  /** Omitted for projects whose repository is private. */
+  github?: string;
 }
 
 export const projects: Project[] = [
@@ -36,14 +37,11 @@ export const projects: Project[] = [
     github: "https://github.com/Victoriano012/InvestApp",
   },
   {
-    // FIXME: The AutoJira repo is private or unreachable on GitHub
-    // (https://api.github.com/repos/Victoriano012/AutoJira returned 404 on 2026-08-30),
-    // so this entry is a best-guess placeholder. Please correct the description,
-    // tags, and link once the repo is public or the details are confirmed.
+    // The AutoJira repository is private (github.com/Victoriano012/AutoJira
+    // returns 404), so no link is shown and the card is marked as private.
     name: "AutoJira",
     description:
       "An autonomous ticket-driven development tool: projects are broken down into Jira-style tickets with dependencies and attachments, and AI coding agents pick them up and complete them end-to-end — implementing, committing, and reporting back — with each ticket's results feeding into the ones that depend on it.",
     tags: ["AI Agents", "Automation", "Developer Tools"],
-    github: "https://github.com/Victoriano012/AutoJira",
   },
 ];
