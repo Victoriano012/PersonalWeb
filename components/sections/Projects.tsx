@@ -36,6 +36,16 @@ export default function Projects() {
             <p className="mt-3 flex-1 text-sm leading-relaxed">
               {project.description}
             </p>
+            <ul className="mt-4 flex flex-wrap gap-1.5">
+              {project.tags.map((tag) => (
+                <li
+                  key={tag}
+                  className="rounded-full border border-border bg-background px-2.5 py-0.5 text-xs text-muted"
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
             {project.github && (
               <a
                 href={project.github}
@@ -48,16 +58,6 @@ export default function Projects() {
                 <span aria-hidden="true">→</span>
               </a>
             )}
-            <ul className="mt-4 flex flex-wrap gap-1.5">
-              {project.tags.map((tag) => (
-                <li
-                  key={tag}
-                  className="rounded-full border border-border bg-background px-2.5 py-0.5 text-xs text-muted"
-                >
-                  {tag}
-                </li>
-              ))}
-            </ul>
           </article>
         ))}
       </div>
