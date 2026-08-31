@@ -20,7 +20,7 @@ export const awards: Award[] = [
     org: "HackUPC",
     year: "2024",
     description:
-      "Barcelona's largest student hackathon, held at UPC, where hundreds of teams build a project over a weekend.",
+      "Barcelona's largest student hackathon, held at UPC.",
   },
   {
     title: "First Prize",
