@@ -21,14 +21,17 @@ export default function Awards() {
               {award.items.map((item, index) => (
                 <li
                   key={`${item.label}-${item.year ?? ""}-${item.detail ?? index}`}
-                  className="flex items-baseline justify-between gap-x-4"
                 >
-                  <span className="min-w-0">
-                    <span className="text-foreground">{item.label}</span>
-                    {item.detail && <span>{` — ${item.detail}`}</span>}
-                  </span>
-                  {item.year && (
-                    <span className="shrink-0 tabular-nums">{item.year}</span>
+                  <span className="text-foreground">{item.label}</span>
+                  {(item.detail || item.year) && (
+                    <span>
+                      {" — "}
+                      {item.detail}
+                      {item.detail && item.year && ", "}
+                      {item.year && (
+                        <span className="tabular-nums">{item.year}</span>
+                      )}
+                    </span>
                   )}
                 </li>
               ))}
