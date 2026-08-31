@@ -1,5 +1,4 @@
 import EntryHeader from "@/components/EntryHeader";
-import Section from "@/components/Section";
 import SubgroupHeading from "@/components/SubgroupHeading";
 import { experience } from "@/src/data/experience";
 import type { ExperienceEntry } from "@/src/data/types";
@@ -28,16 +27,14 @@ function EntryList({ entries }: { entries: ExperienceEntry[] }) {
 
 export default function Experience() {
   return (
-    <Section id="experience" title="Experience">
-      <div className="space-y-10">
-        <EntryList entries={work} />
-        <div>
-          <SubgroupHeading>Academic Service</SubgroupHeading>
-          <div className="mt-4">
-            <EntryList entries={academicService} />
-          </div>
+    <div className="space-y-10">
+      <EntryList entries={work} />
+      <div>
+        <SubgroupHeading>Academic Service</SubgroupHeading>
+        <div className="mt-4">
+          <EntryList entries={academicService} />
         </div>
       </div>
-    </Section>
+    </div>
   );
 }

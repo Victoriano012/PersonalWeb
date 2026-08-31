@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageShell from "@/components/PageShell";
+import Research from "@/components/sections/Research";
 
 export const metadata: Metadata = {
   title: "Research — Victor Conchello",
@@ -9,8 +10,8 @@ export const metadata: Metadata = {
 
 export default function ResearchPage() {
   return (
-    <PageShell title="Research & Publications">
-      <p>Coming soon.</p>
+    <PageShell title="Research">
+      <Research />
     </PageShell>
   );
 }

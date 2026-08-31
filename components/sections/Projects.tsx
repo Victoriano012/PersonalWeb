@@ -1,4 +1,3 @@
-import Section from "@/components/Section";
 import { projects } from "@/src/data/projects";
 
 function GitHubIcon() {
@@ -16,46 +15,44 @@ function GitHubIcon() {
 
 export default function Projects() {
   return (
-    <Section id="projects" title="Personal Projects">
-      <div className="grid gap-5 sm:grid-cols-2">
-        {projects.map((project) => (
-          <article
-            key={project.name}
-            className="flex flex-col rounded-lg border border-border bg-surface/40 p-5 transition-colors hover:border-accent/40"
-          >
-            <div className="flex flex-wrap items-baseline justify-between gap-3">
-              <h3 className="font-serif text-lg font-semibold text-foreground">
-                {project.name}
-              </h3>
-              {project.github && (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 rounded-sm text-sm text-link transition-colors hover:text-link-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-link/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-                >
-                  <GitHubIcon />
-                  GitHub
-                  <span aria-hidden="true">↗</span>
-                </a>
-              )}
-            </div>
-            <p className="mt-3 flex-1 text-sm leading-relaxed">
-              {project.description}
-            </p>
-            <ul className="mt-4 flex flex-wrap gap-1.5">
-              {project.tags.map((tag) => (
-                <li
-                  key={tag}
-                  className="rounded-full border border-border bg-background px-2.5 py-0.5 text-xs text-muted"
-                >
-                  {tag}
-                </li>
-              ))}
-            </ul>
-          </article>
-        ))}
-      </div>
-    </Section>
+    <div className="grid gap-5 sm:grid-cols-2">
+      {projects.map((project) => (
+        <article
+          key={project.name}
+          className="flex flex-col rounded-lg border border-border bg-surface/40 p-5 transition-colors hover:border-accent/40"
+        >
+          <div className="flex flex-wrap items-baseline justify-between gap-3">
+            <h3 className="font-serif text-lg font-semibold text-foreground">
+              {project.name}
+            </h3>
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-sm text-sm text-link transition-colors hover:text-link-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-link/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              >
+                <GitHubIcon />
+                GitHub
+                <span aria-hidden="true">↗</span>
+              </a>
+            )}
+          </div>
+          <p className="mt-3 flex-1 text-sm leading-relaxed">
+            {project.description}
+          </p>
+          <ul className="mt-4 flex flex-wrap gap-1.5">
+            {project.tags.map((tag) => (
+              <li
+                key={tag}
+                className="rounded-full border border-border bg-background px-2.5 py-0.5 text-xs text-muted"
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
   );
 }

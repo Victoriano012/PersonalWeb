@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageShell from "@/components/PageShell";
+import Experience from "@/components/sections/Experience";
 
 export const metadata: Metadata = {
   title: "Experience — Victor Conchello",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 export default function ExperiencePage() {
   return (
     <PageShell title="Experience">
-      <p>Coming soon.</p>
+      <Experience />
     </PageShell>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageShell from "@/components/PageShell";
+import Projects from "@/components/sections/Projects";
 
 export const metadata: Metadata = {
   title: "Projects — Victor Conchello",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <PageShell title="Projects">
-      <p>Coming soon.</p>
+      <Projects />
     </PageShell>
   );
 }
