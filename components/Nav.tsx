@@ -10,14 +10,14 @@ export default function Nav() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur">
-      <nav className="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-x-6 gap-y-1 px-3 py-3 sm:px-6">
+      <nav className="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-x-6 gap-y-1 px-4 py-3 sm:px-6">
         <Link
           href="/"
           className="font-serif text-lg font-semibold tracking-tight text-foreground"
         >
           {profile.name}
         </Link>
-        <ul className="flex w-full flex-nowrap items-center justify-between gap-x-1.5 text-xs tracking-tight text-muted min-[360px]:text-sm sm:w-auto sm:justify-end sm:gap-x-4 sm:tracking-normal">
+        <ul className="-mx-4 flex w-[calc(100%+2rem)] flex-nowrap items-center justify-evenly gap-x-0 text-xs tracking-tight text-muted min-[360px]:text-[13px] sm:mx-0 sm:w-auto sm:justify-end sm:gap-x-4 sm:text-sm sm:tracking-normal">
           {sections.map((section) => {
             const isActive = pathname === section.href;
             return (
