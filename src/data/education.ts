@@ -5,7 +5,6 @@ export const education: EducationEntry[] = [
     degree: "Master's Degree in Data Science",
     institution: "Harvard University",
     period: "2026 - present",
-    details: ["Starting September 2, 2026"],
   },
   {
     degree: "Bachelor's Degree in Mathematics",

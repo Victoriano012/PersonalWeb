@@ -2,7 +2,7 @@ export interface EducationEntry {
   degree: string;
   institution: string;
   period: string;
-  details: string[];
+  details?: string[];
 }
 
 export interface ExperienceEntry {

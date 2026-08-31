@@ -21,7 +21,7 @@ export default function Education() {
               {entry.degree}
             </h3>
             <p className="mt-0.5">{entry.institution}</p>
-            {entry.details.map((detail) => (
+            {entry.details?.map((detail) => (
               <p key={detail} className="mt-1 text-sm text-accent">
                 {detail}
               </p>
