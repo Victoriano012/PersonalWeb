@@ -38,7 +38,7 @@ export const awards: Award[] = [
     org: "SWERC ICPC",
     year: "2022-2024",
     description:
-      "Southwestern Europe Regional Contest of the ICPC, where university teams compete in competitive programming.",
+      "Regional round of ICPC, the competitive programming contest for university teams across Europe.",
     items: [
       { label: "Silver Medal", year: "2024" },
       { label: "Bronze Medal", year: "2023" },
@@ -50,7 +50,7 @@ export const awards: Award[] = [
     org: "Spanish National Olympiads",
     year: "2020",
     description:
-      "National rounds of the Spanish science olympiads, which select the country's top secondary-school students in each subject for the international teams.",
+      "National rounds of the secondary-school science olympiads.",
     items: [
       { label: "Gold Medal", year: "2020", detail: "Informatics" },
       { label: "Gold Medal", year: "2020", detail: "Physics" },
@@ -62,6 +62,6 @@ export const awards: Award[] = [
     org: "Catalan Math Kangaroo",
     year: "2016-2020",
     description:
-      "Catalan edition of the international Kangaroo mathematics contest, a problem-solving competition taken each year by tens of thousands of school students.",
+      "Catalan edition of the international Kangaroo mathematics contest.",
   },
 ];
