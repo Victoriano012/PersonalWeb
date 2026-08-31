@@ -71,6 +71,6 @@ export interface Profile {
   name: string;
   tagline: string;
   /** First-person self-description shown on the home page */
-  bio: string;
+  bio: string[];
   links: ContactLink[];
 }
