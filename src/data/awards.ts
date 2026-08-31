@@ -24,10 +24,10 @@ export const awards: Award[] = [
   },
   {
     title: "First Prize",
-    org: "IMC",
+    org: "International Mathematics Competition for University Students",
     year: "2022 & 2024",
     description:
-      "The International Mathematics Competition for University Students, an annual individual contest gathering participants from universities worldwide.",
+      "The IMC is an annual individual contest gathering participants from universities worldwide.",
     items: [
       { label: "First Prize", year: "2024" },
       { label: "First Prize", year: "2022" },
