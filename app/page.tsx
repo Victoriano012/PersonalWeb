@@ -3,7 +3,7 @@ import { profile } from "@/src/data/profile";
 
 export default function Home() {
   return (
-    <main className="mx-auto w-full max-w-4xl flex-1 px-4 pb-24 sm:px-6">
+    <main className="mx-auto w-full max-w-4xl px-4 pb-24 sm:px-6">
       <Hero />
       <div className="h-px w-10 bg-accent" />
       <div className="mt-8 max-w-prose space-y-4">
