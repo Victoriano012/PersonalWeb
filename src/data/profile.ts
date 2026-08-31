@@ -4,9 +4,9 @@ export const profile: Profile = {
   name: "Victor Conchello Vendrell",
   tagline: "Master's student at Harvard · AI Researcher · Mathematician & Data Scientist",
   bio: [
-    "AI is what interests me most right now. I've spent the last couple of years researching LLMs:",
-    "reasoning models at Qualcomm, writing a thesis at Cambridge and publishing four papers along the way. I'm currently pursuing a Master's at Harvard to go deeper into LLMs and into the broader areas of machine learning and statistics.",
-    "Before that, I studied mathematics and data science at UPC and interned at Jane Street, Huawei and Wiris. In my free time I build small apps for my daily usage.",
+    "AI is what interests me most right now. I've spent the last couple of years researching LLMs: reasoning models at Qualcomm, writing a thesis at Cambridge and publishing four papers along the way.",
+    "I'm currently pursuing a Master's at Harvard to go deeper into LLMs and into the broader areas of machine learning and statistics. Before that, I studied mathematics and data science at UPC and interned at Jane Street, Huawei and Wiris.",
+    "In my free time I build small apps for my daily usage.",
   ],
   links: [
     {
