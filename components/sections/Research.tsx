@@ -61,12 +61,19 @@ export default function Research() {
                 {"."}
               </p>
               <p className="mt-0.5 text-sm">
-                {paper.venue}
-                {paper.url && (
+                <span>
+                  {paper.status ? `${paper.status} at ` : ""}
+                  {paper.venue}
+                  {paper.year ? ` ${paper.year}` : ""}.
+                </span>
+                {paper.workshop && (
+                  <span> Presented at {paper.workshop}.</span>
+                )}
+                {paper.link && (
                   <>
                     {" "}
                     <a
-                      href={paper.url}
+                      href={paper.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-accent underline underline-offset-2 hover:text-accent-hover"

@@ -18,7 +18,6 @@ export const researchExperience: ResearchEntry[] = [
   },
 ];
 
-// TODO: paper URLs are placeholders in the CV — fill in real links when available.
 export const publications: Publication[] = [
   {
     title:
@@ -35,7 +34,11 @@ export const publications: Publication[] = [
       { name: "Arash Behboodi" },
       { name: "Fabio Valerio Massoli" },
     ],
-    venue: "Under review at NeurIPS 2026. Presented at ICML 2026 FoGen.",
+    venue: "NeurIPS",
+    year: 2026,
+    status: "Under review",
+    workshop: "ICML 2026 FoGen",
+    link: "https://arxiv.org/pdf/2605.07721",
   },
   {
     title:
@@ -48,7 +51,10 @@ export const publications: Publication[] = [
       { name: "Jordi Ros-Giralt" },
       { name: "Harris Teague" },
     ],
-    venue: "Presented at ISC High Performance 2026.",
+    venue: "ISC High Performance",
+    year: 2026,
+    status: "Presented",
+    link: "https://arxiv.org/pdf/2606.27797",
   },
   {
     title: "GameTalk: Training LLMs for Strategic Conversation",
@@ -57,7 +63,9 @@ export const publications: Publication[] = [
       { name: "Max Ruiz Luyten" },
       { name: "Mihaela van der Schaar" },
     ],
-    venue: "Under review at AIStats.",
+    venue: "AIStats",
+    status: "Under review",
+    link: "https://arxiv.org/pdf/2601.16276",
   },
   {
     title:
@@ -74,6 +82,10 @@ export const publications: Publication[] = [
       { name: "Arnau Padrés Masdemont" },
       { name: "Jordi Ros-Giralt" },
     ],
-    venue: "Under review at NeurIPS 2026. Presented at ICLR 2026 LLM Reasoning.",
+    venue: "NeurIPS",
+    year: 2026,
+    status: "Under review",
+    workshop: "ICLR 2026 LLM Reasoning",
+    link: "https://arxiv.org/pdf/2601.16218",
   },
 ];

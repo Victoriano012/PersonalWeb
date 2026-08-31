@@ -31,9 +31,15 @@ export interface Author {
 export interface Publication {
   title: string;
   authors: Author[];
-  /** Venue / status line, e.g. "Under review at NeurIPS 2026. Presented at ICML 2026 FoGen." */
+  /** Primary venue name, e.g. "NeurIPS" */
   venue: string;
-  url?: string;
+  /** Year of the primary venue, when known */
+  year?: number;
+  /** Publication status at the primary venue */
+  status?: "Under review" | "Presented";
+  /** Secondary workshop presentation, e.g. "ICML 2026 FoGen" */
+  workshop?: string;
+  link?: string;
 }
 
 export interface Award {
