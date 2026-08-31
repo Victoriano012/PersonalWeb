@@ -66,6 +66,15 @@ export const awards: Award[] = [
     description:
       "Best performer overall of the Catalan edition of the Kangaroo mathematics contest.",
     items: [
+      // https://cangur.org/cangur/cang2020/
+      { label: "Silver Pin", year: "2020" },
+      // https://www.cangur.org/cangur/cang2019/informacions/premis/
+      // "Premi de categoria A", 126 pts ex aequo, joint 4th of the level
+      {
+        label: "4th place in Catalonia, ex aequo",
+        year: "2019",
+        detail: "1st Batxillerat (grade 11)",
+      },
       {
         label: "1st place in Catalonia",
         year: "2018",
@@ -75,6 +84,13 @@ export const awards: Award[] = [
         label: "8th place in Catalonia",
         year: "2017",
         detail: "3rd ESO (grade 9)",
+      },
+      // https://cangur.org/cangur/cang2016/premis.php
+      // "Premi de categoria A", 138,75 pts, 5th-highest score of the level
+      {
+        label: "5th place in Catalonia",
+        year: "2016",
+        detail: "2nd ESO (grade 8)",
       },
     ],
   },
