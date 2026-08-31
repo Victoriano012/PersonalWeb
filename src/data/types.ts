@@ -37,7 +37,7 @@ export interface Publication {
   /** Year of the primary venue, when known */
   year?: number;
   /** Publication status at the primary venue */
-  status?: "Under review" | "Presented";
+  status?: "Under review";
   /** Secondary workshop presentation, e.g. "ICML 2026 FoGen" */
   workshop?: string;
   link?: string;

@@ -60,11 +60,7 @@ export default function Research() {
                       </VenueBadge>
                     )}
                     {paper.workshop && (
-                      <VenueBadge>
-                        Presented
-                        <span aria-hidden="true"> · </span>
-                        {paper.workshop}
-                      </VenueBadge>
+                      <VenueBadge>{paper.workshop}</VenueBadge>
                     )}
                   </ul>
                 )}

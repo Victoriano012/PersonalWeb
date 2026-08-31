@@ -71,24 +71,24 @@ export const awards: Award[] = [
       // https://www.cangur.org/cangur/cang2019/informacions/premis/
       // "Premi de categoria A", 126 pts ex aequo, joint 4th of the level
       {
-        label: "4th place in Catalonia, ex aequo",
+        label: "4th place",
         year: "2019",
         detail: "1st Batxillerat (grade 11)",
       },
       {
-        label: "1st place in Catalonia",
+        label: "1st place",
         year: "2018",
         detail: "4th ESO (grade 10)",
       },
       {
-        label: "8th place in Catalonia",
+        label: "8th place",
         year: "2017",
         detail: "3rd ESO (grade 9)",
       },
       // https://cangur.org/cangur/cang2016/premis.php
       // "Premi de categoria A", 138,75 pts, 5th-highest score of the level
       {
-        label: "5th place in Catalonia",
+        label: "5th place",
         year: "2016",
         detail: "2nd ESO (grade 8)",
       },

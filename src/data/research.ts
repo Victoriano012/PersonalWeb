@@ -53,7 +53,6 @@ export const publications: Publication[] = [
     ],
     venue: "ISC High Performance",
     year: 2026,
-    status: "Presented",
     link: "https://arxiv.org/pdf/2606.27797",
   },
   {
