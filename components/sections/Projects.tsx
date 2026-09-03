@@ -25,18 +25,31 @@ export default function Projects() {
             <h3 className="font-serif text-lg font-semibold text-foreground">
               {project.name}
             </h3>
-            {project.github && (
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-sm text-sm text-link transition-colors hover:text-link-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-link/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-              >
-                <GitHubIcon />
-                GitHub
-                <span aria-hidden="true">↗</span>
-              </a>
-            )}
+            <div className="flex items-baseline gap-4">
+              {project.url && (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-sm text-sm text-link transition-colors hover:text-link-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-link/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                >
+                  Live
+                  <span aria-hidden="true">↗</span>
+                </a>
+              )}
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-sm text-sm text-link transition-colors hover:text-link-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-link/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                >
+                  <GitHubIcon />
+                  GitHub
+                  <span aria-hidden="true">↗</span>
+                </a>
+              )}
+            </div>
           </div>
           <p className="mt-3 flex-1 text-sm leading-relaxed">
             {project.description}

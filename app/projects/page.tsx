@@ -4,7 +4,7 @@ import Projects from "@/components/sections/Projects";
 
 export const metadata: Metadata = {
   title: "Projects — Victor Conchello",
-  description: "Personal projects built by Victor Conchello, including FoodApp, InvestApp and AutoProject.",
+  description: "Personal projects built by Victor Conchello, including FoodApp, InvestApp, AutoProject and Closer Congress.",
   alternates: { canonical: "/projects" },
 };
 
