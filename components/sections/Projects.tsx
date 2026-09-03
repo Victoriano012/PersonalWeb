@@ -25,7 +25,7 @@ export default function Projects() {
             <h3 className="font-serif text-lg font-semibold text-foreground">
               {project.name}
             </h3>
-            <div className="flex items-baseline gap-4">
+            <div className="flex items-center gap-4">
               {project.url && (
                 <a
                   href={project.url}
